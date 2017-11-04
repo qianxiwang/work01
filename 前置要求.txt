@@ -39,3 +39,7 @@ HDFS路径：
 /spark/emp/data/d=171111/h=20/17111125-07.txt
 /spark/emp/data/d=171111/h=20/17111125-08.txt
 /spark/emp/data/d=171111/h=20/17111125-09.txt
+
+
+hadoop fs -rmr /spark/emp/data
+hadoop fs -put /opt/aa/* /spark/emp/temp/201711112025/d=20171111/h=20/
