@@ -22,7 +22,7 @@ object ScalaTest {
     val paths = SparkHadoopUtil.get.globPath(new Path(outputPath + "temp/" + loadTime + partition + "/*.txt"))
     var times = 0
     paths.map(x => {
-      var newLocation = x.toString.replace(outputPath + "temp/" + loadTime, outputPath + "data/")
+      var newLocation = x.toString.replace(outputPath + "temp/" + loadTime, outputPath + "data")
       println("1:" + newLocation)
       newLocation = newLocation.replace("part-r-", "")
       val index = newLocation.lastIndexOf("/")
