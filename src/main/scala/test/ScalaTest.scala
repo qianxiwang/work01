@@ -1,4 +1,4 @@
-package com.aviup
+package test
 
 import java.net.URI
 
